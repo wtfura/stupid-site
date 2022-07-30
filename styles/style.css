@@ -1,17 +1,17 @@
 
 html {
-  background-color: #7F7F7F;
+  background-color: #666666;
   font-size: 150%; /* px значит 'пиксели': базовый шрифт будет 10 пикселей в высоту  */
   font-family: 'Oswald', sans-serif;
   color: ghostwhite;
 }
 
 body {
+  vertical-align: middle;
   width: 75%;
   margin: 0 auto;
-  background-color: #000000;
+  background: linear-gradient(0.25turn, #7F7F7F, #ebf8e1, #7F7F7F);
   padding: 0 20px 20px 20px;
-  border: 5px solid black;
 }
 
 h1 {
@@ -30,4 +30,15 @@ p, li {
 img {
   display: block;
   margin: 0 auto;
+}
+
+#grad1 {
+    background: red;
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20vw;
 }
