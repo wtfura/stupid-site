@@ -18,7 +18,7 @@ video {
     padding: 5%;
     text-align: center;
     /*background-color: #83C5E9;*/
-    background-image: url(../img/back_title.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(30, 6, 45, 0.9)), url(../img/back_title.png);
     color: white;
 }
 
@@ -27,13 +27,15 @@ video {
   padding: 1%;
   font-size: 40px;
   text-shadow: 3px 3px 1px #1E062D;
+/*  background: rgba(161,21,207, 0.5);*/
   /*background-color: red;*/
 }
 
 /* размер хуиты p */
 .header p {
     font-size: 20px;
-    text-shadow: 3px 3px 1px #1E062D;
+    text-shadow: #FFFFFF 3px 3px 15px;
+/*    background: rgba(161,21,207, 0.5);*/
    /* color: white;*/
   }
 
@@ -73,16 +75,20 @@ video {
 /* СОЗДАНИЕ ДВУХ КОЛОНОК ТИПА Я ДУМАЮ ДА */
 /* Левая\мелкая колонка */
 .side {
+    color: red;
+    background: linear-gradient(rgb(30, 6, 45), rgb(50, 50, 50));
     flex: 30%;
-    background-color: #f1f1f1;
+    /*background-color: #f1f1f1;*/
     padding: 20px;
     font-size: 175%;
 }
 
 /* Типо главная колонка */
 .main {   
+    background: linear-gradient(rgb(100, 100, 100), rgb(100, 100, 100));
+    color: white;
     flex: 70%;
-    background-color: white;
+    /*background-color: white;*/
     padding: 20px;
     font-size: 175%;
 }
@@ -99,7 +105,8 @@ video {
 .footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
+    background: linear-gradient(rgb(50, 50, 50), rgb(50, 50, 50));
+    color: red;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
