@@ -62,7 +62,7 @@ video {
 
 /* смена цвета при наведении на ссылку */
 .navbar a:hover {
-    background-color: #bdbdbd;
+    background-color: #ffffff;
     color: red;
 }
 
