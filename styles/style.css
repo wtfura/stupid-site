@@ -216,3 +216,22 @@ video {
     /* counter-increment: bc; */
     /* padding: 0px 5px 5px 5px; */
 } */
+
+.thumb-wrap {
+    /* position: relative; */
+    padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+    /* height: 0; */
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    overflow: hidden;
+  }
+  .thumb-wrap iframe {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    border-width: 0;
+    outline-width: 0;
+  }
