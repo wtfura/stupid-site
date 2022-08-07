@@ -2,6 +2,21 @@
     box-sizing: border-box;
 }
 
+
+body::-webkit-scrollbar {
+    width: 16px;               /* ширина scrollbar */
+  }
+  body::-webkit-scrollbar-track {
+    background: #1E062D;        /* цвет дорожки */
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #1E062D;    /* цвет плашки */
+    border-radius: 5px;       /* закругления плашки */
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+    border: 3px solid red;  /* padding вокруг плашки */
+  }
+
+
 body {
     font-family: 'Oswald', sans-serif;
     margin: 0;
@@ -19,6 +34,7 @@ video {
     text-align: center;
     /*background-color: #83C5E9;*/
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(30, 6, 45, 0.9)), url(../img/back_title.png);
+    background-attachment: fixed;
     color: white;
 }
 
@@ -41,6 +57,9 @@ video {
 
 /* стиль верхнего навигационного меню типо я не ебу бля*/
 .navbar {
+    position: sticky;
+    top: 0px;
+    width: 100%;
     overflow: hidden;
     background-color: #1E062D;
 }
